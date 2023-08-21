@@ -1,0 +1,83 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.bgcontainer {
+    /* The image used */
+    background-image: url("SunSetting.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        "Phase-1 Phase-2 Phase-3"
+        ". Phase-2 ."
+        ". . .";
+}
+
+.Phase-1 {
+    grid-area: Phase-1;
+}
+
+.Phase-3 {
+    grid-area: Phase-3;
+}
+
+.Phase-2 {
+    grid-area: Phase-2;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+    min-height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: 2px solid blue;
+    padding: 25px;
+    background: #88010101;
+    box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    margin-top: 150px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #000077, #0000dd);
+    outline: 0;
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+    .card button:hover {
+        opacity: 0.8;
+    }
