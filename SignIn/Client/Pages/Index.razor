@@ -6,22 +6,29 @@
     <div class="container">
         <div class="Phase-2">
             <div class="card">
-                <h1>Sign In</h1>
+                <h1 color="white">Sign In</h1>
                 <EditForm Model="@Model" OnValidSubmit="@Submit">
                     <DataAnnotationsValidator />
                     <ValidationSummary />
                     <div>
                         <p>
-                            Username:
+                            First Name:
                         </p>
-                        <InputText @bind-Value="Model!.Username" />
+                        <InputText @bind-Value="Model!.Firstname" />
                     </div>
                     <br />
                     <div>
                         <p>
-                            Password:
+                            Last Name:
                         </p>
-                        <InputText type="password" @bind-Value="Model!.Password" />
+                        <InputText type="password" @bind-Value="Model!.Lastname" />
+                    </div>
+                    <br />
+                    <div>
+                        <p>
+                            Student ID:
+                        </p>
+                        <InputText type="password" @bind-Value="Model!.StudentId" />
                     </div>
                     <br />
                     <div align="center">

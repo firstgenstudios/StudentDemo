@@ -10,7 +10,18 @@ namespace SignIn.Client.Pages
 
         private void Submit()
         {
-            Logger.LogInformation("Model.Username = {Username}", Model?.Username);
+            if (Model != null)
+            {
+                if (Model!.Firstname == "Patrick")
+                {
+                    if (Model!.Lastname == "Ferguson")
+                    {
+                        if (Model!.StudentId == "10203010")
+                        {
+                        }
+                    }
+                }
+            }
         }
     }
 }
