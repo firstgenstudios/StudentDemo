@@ -18,10 +18,13 @@ namespace SignIn.Client.Pages
                     {
                         if (Model!.StudentId == "10203010")
                         {
+                            Navigation.NavigateTo("counter");
+                            return;
                         }
                     }
                 }
             }
+            Navigation.NavigateTo("invalid");
         }
     }
 }

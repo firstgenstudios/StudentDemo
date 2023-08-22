@@ -1,11 +1,18 @@
-﻿body, html {
-    height: 100%;
-    margin: 0;
+﻿p {
+    color: black;
+    font-size: 18px;
 }
 
-p {
-    color: white;
-    font-size: 18px;
+label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+img {
+    float: right;
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .bgcontainer {
@@ -22,11 +29,10 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        ". . ."
         "Phase-1 Phase-2 Phase-3"
         ". Phase-2 ."
         ". . .";
